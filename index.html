@@ -9,56 +9,81 @@
 <body>
     <header>
         <div class="logo">
-            <h1>ITI</h1>
+            <h1>ITI – UTU</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyecto">El Proyecto</a></li>
-                <li><a href="#redes">Configuración de Red</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#institucional">ITI</a></li>
+                <li><a href="#oferta">Oferta Educativa</a></li>
+                <li><a href="#proyecto">Ntro. Proyecto</a></li>
+                <li><a href="#acceso">Acceso Remoto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="banner">
-            <h2>PROYECTO REDES 2025</h2>
-            <p>Implementación Exitosa de Servidor Web en Entorno LAN Dinámico.</p>
+            <h2>Instituto Tecnológico de Informática – UTU</h2>
+            <p>Implementación y Verificación de Servidor Web en Entorno LAN Dinámico.</p>
         </section>
 
-        <section id="proyecto" class="contenido">
-            <h3>Detalles de la Defensa Técnica</h3>
-            <p>Este proyecto se enfoca en la implementación y verificación de un servicio **Apache HTTP Server** en una LAN mínima, demostrando la capacidad de la laptop de funcionar como servidor y cliente.</p>
-            
+        <section id="institucional" class="contenido">
+            <h3>Sobre el Instituto Tecnológico de Informática</h3>
+            <p>El ITI se enfoca en la formación técnica y tecnológica de vanguardia, preparando profesionales competentes en las áreas de ciberseguridad, desarrollo de software y soporte informático.</p>
+            <p>Nuestra misión es impulsar la tecnología en la educación, ofreciendo Bachilleratos y Carreras Tecnológicas adaptadas a las demandas del mercado laboral actual. Estamos ubicados en Mercedes 1131.</p>
+        </section>
+        
+        <section id="oferta" class="contenido">
+            <h3>Áreas de Estudio Destacadas</h3>
             <div class="cards-container">
                 <div class="card">
-                    <h4>Servicio (Capa 7)</h4>
-                    <p>Activación de **Apache/XAMPP**. Acceso verificado vía Loopback (<code>http://webITI</code>).</p>
+                    <h4>Tecnólogo en Ciberseguridad</h4>
+                    <p>Formación especializada en la protección de redes y sistemas, incluyendo análisis de riesgos y defensa activa.</p>
                 </div>
                 <div class="card">
-                    <h4>Red (Capa 3)</h4>
-                    <p>Uso de **DHCP Dinámico** (ej. <code>10.20.48.142</code>). Confirmada la portabilidad entre distintas subredes.</p>
+                    <h4>Bachillerato Tecnológico</h4>
+                    <p>Preparación técnica sólida para continuar estudios superiores en informática y otras ingenierías.</p>
                 </div>
                 <div class="card">
-                    <h4>Seguridad (Capa 4)</h4>
-                    <p>Configuración de **Firewall de Windows** para permitir tráfico **TCP/80**, asegurando el acceso remoto a clientes.</p>
+                    <h4>Tecnicaturas y FINES T</h4>
+                    <p>Programas de rápida inserción laboral en soporte de infraestructura y desarrollo de aplicaciones.</p>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+
+        <section id="proyecto" class="contenido">
+            <h3>Defensa Técnica: Servidor Web en Red Local</h3>
+            <p>Este proyecto demuestra la capacidad de la plataforma para funcionar como servidor de aplicaciones (Apache) dentro de una LAN dinámica, validando la configuración de Capas 3, 4 y 7.</p>
+            
+            <div class="cards-container proyecto-cards">
+                <div class="card">
+                    <h4>Activación y Loopback</h4>
+                    <p>Servicio Apache activo y validado vía Loopback (<code>http://webITI</code>), confirmando el **funcionamiento del software** (Capa 7).</p>
+                </div>
+                <div class="card">
+                    <h4>Seguridad y Firewall</h4>
+                    <p>Regla de entrada TCP/80 configurada en Firewall de Windows, permitiendo el **acceso remoto** a clientes de la LAN (Capa 4).</p>
+                </div>
+                <div class="card">
+                    <h4>Direccionamiento Dinámico</h4>
+                    <p>Uso de **DHCP** (ej. <code>10.20.48.142</code>), validando la adaptabilidad de la configuración a cualquier subred.</p>
                 </div>
             </div>
         </section>
 
-        <section id="redes" class="contenido">
-            <h3>Punto de Acceso para Clientes</h3>
-            <p>Para acceder al servidor desde cualquier máquina conectada a la misma red del salón de clases, use la siguiente dirección IP:</p>
+        <section id="acceso" class="contenido">
+            <h3>Punto de Acceso para Clientes Remotos (Salón de Clases)</h3>
+            <p>Para acceder al servidor desde cualquier dispositivo cliente (celular, laptop de compañero) conectado a la misma red LAN, use la IP asignada por DHCP:</p>
             <div class="ip-box">
-                <code>http://[Dirección IPv4 Dinámica]</code>
+                <code>http://[Dirección IPv4 Dinámica, ej. 10.20.48.142]</code>
             </div>
-            <p>*(Ejemplo: http://10.20.48.142)*</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 ITI - Proyecto de Redes Informáticas. Todos los derechos reservados.</p>
+        <p>&copy; 2025 ITI - Instituto Tecnológico de Informática. Proyecto de Redes Informáticas. </p>
     </footer>
 </body>
 </html>
