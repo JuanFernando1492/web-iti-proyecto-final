@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITI - Proyecto de Implementación de Redes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ITI</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyecto">El Proyecto</a></li>
+                <li><a href="#redes">Configuración de Red</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <h2>PROYECTO REDES 2025</h2>
+            <p>Implementación Exitosa de Servidor Web en Entorno LAN Dinámico.</p>
+        </section>
+
+        <section id="proyecto" class="contenido">
+            <h3>Detalles de la Defensa Técnica</h3>
+            <p>Este proyecto se enfoca en la implementación y verificación de un servicio **Apache HTTP Server** en una LAN mínima, demostrando la capacidad de la laptop de funcionar como servidor y cliente.</p>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <h4>Servicio (Capa 7)</h4>
+                    <p>Activación de **Apache/XAMPP**. Acceso verificado vía Loopback (<code>http://webITI</code>).</p>
+                </div>
+                <div class="card">
+                    <h4>Red (Capa 3)</h4>
+                    <p>Uso de **DHCP Dinámico** (ej. <code>10.20.48.142</code>). Confirmada la portabilidad entre distintas subredes.</p>
+                </div>
+                <div class="card">
+                    <h4>Seguridad (Capa 4)</h4>
+                    <p>Configuración de **Firewall de Windows** para permitir tráfico **TCP/80**, asegurando el acceso remoto a clientes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="redes" class="contenido">
+            <h3>Punto de Acceso para Clientes</h3>
+            <p>Para acceder al servidor desde cualquier máquina conectada a la misma red del salón de clases, use la siguiente dirección IP:</p>
+            <div class="ip-box">
+                <code>http://[Dirección IPv4 Dinámica]</code>
+            </div>
+            <p>*(Ejemplo: http://10.20.48.142)*</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ITI - Proyecto de Redes Informáticas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
