@@ -5,9 +5,10 @@
 */
 :root {
     --primary-blue: #004d99; /* Azul más oscuro y profesional */
-    --secondary-light: #f4f6f9;
+    --secondary-light: #f4f6f9; /* Fondo Gris claro para Institucional */
     --text-dark: #333333;
     --accent-red: #cc0000; /* Rojo sutil para acentos (similar a ITI/UTU) */
+    --project-bg: #ffffff; /* Fondo Blanco para el Proyecto */
 }
 
 body {
@@ -19,7 +20,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- HEADER Y NAVEGACIÓN --- */
+/* --- HEADER Y NAVEGACIÓN --- (Sin Cambios) */
 header {
     background-color: var(--primary-blue);
     color: white;
@@ -61,16 +62,26 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* --- SECCIÓN PRINCIPAL (MAIN) --- */
-main {
-    padding: 0;
+/* --- SECCIONES: SEPARACIÓN VISUAL --- */
+
+/* Sección Institucional (Fondo Gris Claro) */
+#institucional, #oferta {
+    background-color: var(--secondary-light); /* Fondo para ITI/Oferta */
+    padding: 40px 5%;
+}
+
+/* Sección del Proyecto (Fondo Blanco) */
+#proyecto, #acceso {
+    background-color: var(--project-bg); /* Fondo Blanco, separa del anterior */
+    padding: 40px 5%;
+    border-top: 1px solid #ddd; /* Línea suave para énfasis */
 }
 
 .contenido {
     width: 90%;
     max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 0 auto; /* Centrado sin margen superior/inferior en el flujo */
+    padding: 20px 0; 
 }
 
 /* Banner de Introducción */
@@ -98,13 +109,13 @@ main {
     justify-content: space-around;
     gap: 20px;
     margin-top: 30px;
-    flex-wrap: wrap; /* Para hacerlo responsive */
+    flex-wrap: wrap;
 }
 
 .card {
     background-color: #ffffff;
     border: 1px solid #dddddd;
-    border-top: 5px solid var(--primary-blue); /* Borde de color institucional */
+    border-top: 5px solid var(--primary-blue);
     padding: 20px;
     width: calc(33% - 40px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -125,7 +136,7 @@ main {
 }
 
 .proyecto-cards .card {
-    border-top: 5px solid var(--accent-red); /* Cambia el color de las tarjetas del proyecto */
+    border-top: 5px solid var(--accent-red); /* Color de acento para el proyecto */
 }
 
 /* IP Box para el Acceso */
